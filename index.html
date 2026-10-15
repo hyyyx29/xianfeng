@@ -189,9 +189,9 @@ const MAPS = [
    {side:"atk", t:233, img:240, near:"A Lobby", site:"B", title:"A 后点（在出生点佯攻 A）", s:[81.4,49.6], e:[41,13], r:8, stand:"靠住悬崖和墙面的角落", aim:"准心对准这块砖的左下角（不要打到这块砖）", how:"满格蓄力，一次反弹", see:"落点比较靠后，对方一般会以为是从 A 大射出来的"},
    {side:"def", t:273, img:279, near:"A Tower", site:"A", title:"A 大道（可配大招）", s:[44,28], e:[64,20], r:8, stand:"瞭望台上（可配大招）", aim:"沿着这条黑线，瞄准灰色墙壁的中间位置", how:"满格蓄力，两次反弹", see:"看到人以后马上开大，通道里的敌人一个都跑不掉"},
    {side:"def", t:325, img:331, near:"A Security", site:"A", title:"B 前点（从 A 回防 B）", s:[24.3,5.4], e:[49,86], r:9, stand:"跳上一节台阶，靠住左侧底部", aim:"用英雄血量 UI 线条对准旁边的门锁底部", how:"满格蓄力，两次反弹", see:"这支箭飞行时间比较长，正好箭到人到"},
+   {side:"def", t:441, img:445, shot:"aby_u5", near:"A Secret", site:"A", title:"B 前点（从出生点回防 B）", s:[19.2,31.5], e:[49,86], r:9, stand:"靠住门口底部墙上的小突起", aim:"抬头瞄准树上的这个蓝色小点", how:"满格蓄力，一次反弹", see:"回防 B 点用，能把点内的情况看得一清二楚"},
    {side:"def", t:369, img:375, near:"B Site", site:"B", title:"B 大道", s:[35.8,77.8], e:[62,86], r:8, stand:"靠住左上角的墙角", aim:"贴着箱子瞄准这面墙的白色部分", how:"满格蓄力，两次反弹", see:"这支箭可以把路口和二楼都照出来"},
-   {side:"def", t:413, img:423, shot:"abyq_419", near:"B Tower", site:"B", title:"A 前点（从 B 回防 A）", s:[32,95], e:[55,16], r:10, stand:"瞭望台通道最下面的角落，靠住门锁", aim:"用英雄血量 UI 线条翘起来的头子对准电箱和墙壁的夹角", how:"两格蓄力，一次反弹", see:"支援 A 点时用，箭飞得比较快，能照到 A 区前点的大部分位置"},
-   {side:"def", t:441, img:445, shot:"aby_u5", near:"A Secret", site:"A", title:"B 前点（从出生点回防 B）", s:[19.2,31.5], e:[49,86], r:9, stand:"靠住门口底部墙上的小突起", aim:"抬头瞄准树上的这个蓝色小点", how:"满格蓄力，一次反弹", see:"回防 B 点用，能把点内的情况看得一清二楚"}
+   {side:"def", t:413, img:423, shot:"abyq_419", near:"B Tower", site:"B", title:"A 前点（从 B 回防 A）", s:[32,95], e:[55,16], r:10, stand:"瞭望台通道最下面的角落，靠住门锁", aim:"用英雄血量 UI 线条翘起来的头子对准电箱和墙壁的夹角", how:"两格蓄力，一次反弹", see:"支援 A 点时用，箭飞得比较快，能照到 A 区前点的大部分位置"}
   ]},
  {id:"bind", name:"Bind", cn:"源工重镇", agent:FADE, bv:"BV16gw5zfExV", vt:"源工重镇黑梦诡眼点位", vd:"2026-03-15",
   atkSpawn:[58,93], defSpawn:[52,8],
@@ -215,17 +215,17 @@ const MAPS = [
  {id:"corrode", name:"Corrode", cn:"盐海矿镇", agent:FADE, bv:"BV1GutyzAEsz", vt:"盐海矿镇黑梦实用点位", vd:"2025-08-07",
   atkSpawn:[92,50], defSpawn:[12,50],
   lineups:[
+   {side:"atk", t:77, img:81, near:"A Lobby", site:"A", title:"A 前点", s:[66.6,25.7], e:[58,10], r:8, stand:"靠住小箱子（不要跳上去）", aim:"准心瞄准这条裂缝的左边头子", how:"原地跳投", see:"落在城墙的外侧，视野非常好"},
+   {side:"atk", t:89, img:93, near:"A Yard", site:"A", title:"A 点", s:[52.5,17.5], e:[39,25], r:8, stand:"靠住有扫帚的一个角落", aim:"准心对准窗户里最左边的小圆点", how:"直接丢", see:"点内的情况一目了然"},
    {side:"atk", t:29, img:33, near:"B Site", site:"B", title:"B 点", s:[56.3,73.9], e:[45,67], r:8, stand:"靠住矮墙", aim:"准心对准这块盐晶的中部", how:"往前走一步，跳投", see:"被秒打的概率小得多，但看不见小房子里面"},
    {side:"atk", t:45, img:51, near:"Mid Bottom", site:"B", title:"B 转点 A", s:[58,67.0], e:[43,48], r:9, stand:"靠住信箱和栅栏门的交接处", aim:"瞄准屋顶上小方块的左下角", how:"跳投", see:"诡眼会滑落到左边的屋顶上，整个中路的情况都能掌握"},
    {side:"atk", t:61, img:65, near:"A Main", site:"M", title:"中路", s:[63,52], e:[45,47], r:8, stand:"贴住左边的墙", aim:"准心对准吊车上的红色部分", how:"原地跳投", see:"可以看到拱门的更深处，不过矮墙的后面是盲点"},
-   {side:"atk", t:77, img:81, near:"A Lobby", site:"A", title:"A 前点", s:[66.6,25.7], e:[58,10], r:8, stand:"靠住小箱子（不要跳上去）", aim:"准心瞄准这条裂缝的左边头子", how:"原地跳投", see:"落在城墙的外侧，视野非常好"},
-   {side:"atk", t:89, img:93, near:"A Yard", site:"A", title:"A 点", s:[52.5,17.5], e:[39,25], r:8, stand:"靠住有扫帚的一个角落", aim:"准心对准窗户里最左边的小圆点", how:"直接丢", see:"点内的情况一目了然"},
    {side:"def", t:103, img:109, near:"A Site", site:"A", title:"A 前点", s:[44.6,25.7], e:[51,19], r:9, stand:"靠住转角", aim:"准心对准第二个方块的左上角", how:"跳投", see:"落在中间的高台上，大部分点位都能看到"},
-   {side:"def", t:117, img:121, near:"Mid Bottom", site:"M", title:"A 前点（从中路回防 A）", s:[50,48.5], e:[42,22], r:8, stand:"靠住角落", aim:"对准 V 字形的底部", how:"原地跳投", see:"这颗眼可以看到直架的敌人"},
    {side:"def", t:147, img:151, shot:"crf_d4", near:"A Elbow", site:"A", title:"A 点（反清）", s:[42,8.5], e:[38,24], r:9, stand:"靠住管道的角落", aim:"准心对准横梁上的第四个方块", how:"掏出诡眼，直接扔过去", see:"可以同时看到包点内和警家方向"},
-   {side:"def", t:163, img:171, near:"Mid Window", site:"M", title:"中路", s:[47.2,46.3], e:[50,40], r:9, stand:"靠住门边（对面看不见）", aim:"准心对准墙上这块污渍的左上角", how:"原地跳投", see:"可以同时看到中路和 A 大外面的情况"},
    {side:"def", t:181, img:185, near:"B Site", site:"B", title:"B 前点", s:[42.0,81.0], e:[55,68], r:9, stand:"点内坑角落", aim:"准心瞄准最左边的这根树枝顶部", how:"跳投", see:"落在屋顶上，唯一的盲区是矮墙的左边"},
-   {side:"def", t:235, img:233, shot:"crf_d9", near:"B Tower", site:"B", title:"B 点（反清）", s:[33,74.4], e:[42,72], r:9, stand:"二楼窗台", aim:"直接把诡眼扔在两边的小木条上", how:"直接扔", see:"对方视角看这颗眼是瞬间冒出来的，根本来不及打掉，点内大部分位置都能看到"}
+   {side:"def", t:235, img:233, shot:"crf_d9", near:"B Tower", site:"B", title:"B 点（反清）", s:[33,74.4], e:[42,72], r:9, stand:"二楼窗台", aim:"直接把诡眼扔在两边的小木条上", how:"直接扔", see:"对方视角看这颗眼是瞬间冒出来的，根本来不及打掉，点内大部分位置都能看到"},
+   {side:"def", t:117, img:121, near:"Mid Bottom", site:"M", title:"A 前点（从中路回防 A）", s:[50,48.5], e:[42,22], r:8, stand:"靠住角落", aim:"对准 V 字形的底部", how:"原地跳投", see:"这颗眼可以看到直架的敌人"},
+   {side:"def", t:163, img:171, near:"Mid Window", site:"M", title:"中路", s:[47.2,46.3], e:[50,40], r:9, stand:"靠住门边（对面看不见）", aim:"准心对准墙上这块污渍的左上角", how:"原地跳投", see:"可以同时看到中路和 A 大外面的情况"}
   ]},
  {id:"haven", name:"Haven", cn:"隐世修所", agent:SOVA, bv:"BV1FXr8B9E61", vt:"隐世修所猎枭点位教学", vd:"2026-01-11",
   atkSpawn:[89,51], defSpawn:[14,42],
